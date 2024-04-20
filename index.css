@@ -1,0 +1,458 @@
+*{
+    font-family: 'Reem Kufi Fun', sans-serif !important;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Header*/
+.header{
+    background-color: #0d304e;
+    display: flex;
+    height: 70px;
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .header__contenedorInfo{
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        height: 60px;
+    }
+
+        .header__texto{
+            margin-left: 15px;
+            padding: 0px;
+        }
+
+        .header__logo{
+            height: 60px;
+        }
+
+        .header__logo--dM:hover{
+            transform: rotate(-15deg);
+            transition: 0.5s;
+        }
+
+        .header__titulo{
+            color: green;
+            font-size: 2rem;
+            height: 2rem;
+            line-height: 2rem;
+        }
+
+        .header__parrafo{
+            color: white;
+        }
+
+        .header__contenedorInfo span{
+            color: tomato;
+            margin-left: 5px;
+        }
+
+    .header__contenedorMenu{
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+        .header__lista{
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            margin-right: 25px;
+        }
+
+        .header__link{
+            margin: 5px;
+            text-decoration: none;
+            font-size: 15px;
+            color: white;
+            transition: ease-out 0.5s;
+        }
+
+        .header__link:hover{
+            color: rgb(238, 107, 47);
+        }
+
+        .header__logo--insta, .header__logo--youtube{
+            border-radius: 50%;
+        }
+
+
+@media (max-width:1020px){
+    .header__contenedorMenu{
+        display: none;
+    }
+}
+
+@media (max-width:540px){
+
+    .header__titulo{
+        display: none;
+    }
+
+    .header{
+        justify-content: center;
+    }
+}
+
+/*Main*/
+.main{
+    position: relative;
+}
+.main__videoContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.main__video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main__transparencia{
+    position: absolute;
+    display: flex;
+    inset: 0px 0px 0px 0px;
+    background-color: rgba(0, 0, 0, 0.558);
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__TextContainer{
+    position: relative;
+    text-align: center;
+}
+
+.main__tituloPrincipal{
+    color: white;
+    font-size: 6vw;
+    text-shadow: 2px 2px 2px black;
+}
+
+.main__subTitPpal{
+    color: white;
+    font-size: 3vw;
+    text-shadow: 2px 2px 2px black;
+}
+
+/*Características*/
+.caracteristicas{
+    background-image: linear-gradient(to bottom, #d59648, #1c66a7);
+}
+
+.caracteristicas__cardContainer{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /* no me gusta cuando se ven 3 y 1*/
+    gap: 1vw;
+}
+
+.seccion__titulo{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.caracteristicas__card{
+    position: relative;
+    height: 400px;
+    margin: 5px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.card__imagen{
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.card__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.card__info{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.37);
+    border-radius: 20px;
+}
+
+.card__button{
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 40%;
+    left: 25%;
+    background-color: #be5252;
+    border: none;
+    border-radius: 50px;
+    color: aliceblue;
+    font-weight: 700;
+}
+
+.card__button--caracteristicas{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.card__info:hover .card__button--caracteristicas{
+        opacity: 1;
+}
+
+.card__titulo{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.card__texto{
+    padding: 10px;
+    color: white;
+}
+
+.disMouse{
+    font-weight: bold;
+    color: tomato;
+    font-style: italic;
+}
+
+@media (max-width:1020px){
+    .caracteristicas__cardContainer{
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+}
+
+/*Características*/
+.usuarios{
+    background-image: linear-gradient(to bottom,  #1c66a7, #be5252);
+}
+
+.usuarios__contenido{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.usuarios__texto{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.usuarios__parrafo{
+    color: white;
+    font-weight: 900;
+}
+
+.usuarios__boton{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    height: 25px;
+}
+
+.usuarios__button{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    color: #be5252;
+    font-weight: 700;
+}
+
+.usuarios__imagen{
+    width: 50%;
+    padding: 10px;
+}
+
+.usuarios__img{
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width:1008px){
+    .usuarios__contenido{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .usuarios__texto{
+        width: 100%;
+        order: 2;
+        text-align: center;
+    }
+
+    .usuarios__imagen{
+        width: 50%;
+    }
+}
+
+/*Empresa*/
+.empresa{
+    background-image: linear-gradient(to bottom, #be5252, #4E8E5C);
+}
+
+.empresa__contenido{
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.empresa__texto{
+    width: 33%;
+    padding: 10px;
+}
+
+.empresa__imagen{
+    width: 33%;
+}
+
+.empresa__img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.empresa__misionVision__titulo{
+    text-align: center;
+    color: tomato;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.empresa__misionVision__texto{
+    color: white;
+    font-weight: 900;
+    text-align: center;
+}
+
+@media (max-width:1008px){
+    .empresa__contenido{
+        flex-direction: column;
+    }
+    
+    .empresa__texto{
+        width: 100%;
+    }
+
+    .empresa__imagen{
+        width: 100%;
+        display: flex;
+    }
+
+    .empresa__img{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/*Footer*/
+[class^="footer__csspropio"]{
+    background-color: #4E8E5C ;
+}
+
+.footer__contenedor{
+    width: 80%;
+    margin: auto;
+}
+
+.footer__formulario{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 30px;
+    justify-content: center;
+}
+
+.footer__formulario__datosPersonales{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.footer__input{
+    display: block;
+    margin: 5px;
+    resize: none;
+}
+
+.footer__boton{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: #be5252;
+    font-style: italic;
+    border: none;
+    border-radius: 50px;
+    color: aliceblue;
+    bottom: -15px;
+    transition: 0.5s;
+}
+
+.footer__boton:hover{
+    background-color: white;
+    color: #be5252;
+}
+
+.footer__links{
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media (max-width:555px) {
+    .footer__formulario{
+        height: 140px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__boton{
+        bottom: -20px;
+    }
+
+    .footer__links{
+        height: 120px;
+        flex-direction: column;
+        justify-content: end;
+    }
+    
+}

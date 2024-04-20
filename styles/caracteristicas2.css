@@ -1,0 +1,23 @@
+.caract1{
+    display: flex;
+    background-image: linear-gradient(to bottom, #d59648, #1c66a7) !important;
+}
+
+.caract2{
+    display: flex;
+    background-image: linear-gradient(to bottom,  #1c66a7, #be5252) !important;
+}
+
+.caract3{
+    display: flex;
+    background-image: linear-gradient(to bottom, #be5252, #4E8E5C) !important;
+}
+
+.caract4{
+    display: flex;
+    background-image: linear-gradient(to bottom,  #4E8E5C, #d59648) !important;
+}
+
+[class*="--caracteristicas"]{
+    background-color: #d59648 !important;
+}
