@@ -38,6 +38,8 @@
         }
 
         .header__titulo{
+            margin-top: auto !important;
+            margin-bottom: auto !important;
             color: green;
             font-size: 2rem;
             height: 2rem;

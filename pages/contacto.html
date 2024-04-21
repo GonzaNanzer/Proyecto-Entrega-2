@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - dis+capacidad</title>
-    <link rel="stylesheet" href="../styles/contacto.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-    <header class="header"><!--header--> 
-        <img src="../images/logo disMouse.png" alt="logo disMouse" href="index.html" class="logo"> <!--logo-->
-            <dl class="navegacion">
-                <li><a href="./caracteristicas2.html">Características</a></li>
-                <li><a href="./pages/equiparParaEquipar.html">Usuarios</a></li>
-                <li><a href="../pages/empresa.html">Empresa</a></li>
-                <li><a href="../index.html">Principal</a></li>
+    <header class="header">
+        <div class="header__contenedorInfo">
+            <img src="../images/logo disMouse.png" alt="logo disMouse" href="index.html" class="header__logo header__logo--dM">
+            <div class="header__texto">
+                <h2 class="header__titulo">disMouse</h2>
+                <p class="header__parrafo">El unico dispositivo de acceso a TICs<span>diseñado para todos</span></p>
+            </div>
+        </div>
+        <div class="header__contenedorMenu">
+            <dl class="header__lista">
+                <li><a href="../index.html"class="header__link header__link--contacto">Principal</a></li>
+                <li><a href="./caracteristicas2.html" class="header__link header__link--caract">Características</a></li>
+                <li><a href="./pages/equiparParaEquipar.html" class="header__link header__link--usuarios">Usuarios</a></li>
+                <li><a href="../pages/empresa.html" class="header__link header__link--empresa">Empresa</a></li>
             </dl>
-        <img src="../images/instagram dis+capacidad.jpg" alt="logo instagram" class="logo instagram"><!--instagram-->
-        <img src="../images/YouTube dis+capacidad.jpg" alt="logo YouTube" class="logo YouTube"><!--youtube-->
+            <img src="../images/instagram dis+capacidad.jpg" alt="logo instagram" class="header__logo header__logo--insta"><!--instagram-->
+            <img src="../images/YouTube dis+capacidad.jpg" alt="logo YouTube" class="header__logo header__logo--youtube"><!--youtube-->
+        </div>
     </header>
-    <footer class="footer"><!--footer--> 
-        <h2>Contactanos</h2>
-        <form action=" " method="get" > 
-            <fieldset>
-                <legend>Datos personales:</legend>
-                <input type="text" name="Nombre" placeholder="Tu Nombre" class="datosPersonales">
-                <input type="email" name="Email" placeholder="Tu Email" class="datosPersonales">
-            </fieldset>
-            <fieldset>
-                <legend>Tu Mensaje</legend>
-                <textarea class="mensaje" type="text" name="Mensaje" placeholder="Contanos sobre vos"></textarea> 
-            </fieldset>  
-            <input type="submit" value="Enviar" class="boton">
-        </form>
-        <dl>
-            <li><a href="http://www.dismascapacidad.com.ar">Web dis+capacidad</a></li>
-            <li><a href="http://www.instagram.com/dismascapacidad">Instagram</a></li>
-            <li><a href="">YouTube</a></li>
-            <li><a href="">whatsapp</a></li>
-        </dl>
+    <footer class="footer__csspropio">
+        <h2 class="seccion__titulo">Contactanos</h2>
+        <div class="footer__contenedor">
+            <form class="footer__formulario" action=" " method="get" > 
+                <div class="footer_formulario__datosPersonales">
+                        <input type="text" name="Nombre" placeholder="Tu Nombre" class="footer__input">
+                        <input type="email" name="Email" placeholder="Tu Email" class="footer__input">
+                </div>
+                <div class="footer_formulario__datosPersonales">
+                    <textarea type="text" name="Mensaje" placeholder="Contanos sobre vos" class="footer__input"></textarea> 
+                </div>  
+                <input type="submit" value="Enviar" class="footer__boton">
+            </form>
+            <dl class="footer__links">
+                <li><a class="footer__link" href="http://www.dismascapacidad.com.ar">Web dis+capacidad</a></li>
+                <li><a class="footer__link" href="http://www.instagram.com/dismascapacidad">Instagram</a></li>
+                <li><a class="footer__link" href="">YouTube</a></li>
+                <li><a class="footer__link" href="">whatsapp</a></li>
+            </dl>
+        </div>
     </footer>
 </body>
 </html>
